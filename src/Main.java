@@ -13,6 +13,11 @@ public class Main {
 
         tortoise.start();
         hare.start();
+        try{
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         hare2.start();
         tortoise2.start();
 
